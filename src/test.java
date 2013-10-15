@@ -1,18 +1,14 @@
+import mvc.*;
+
 public class test
 {
     public static void main(String[] args)
     {
-        System.out.println("Yupiiii!!!11!1");
-    }
+        Model model      = new Model();
+        View view       = new View(model);
+        Controller controller = new Controller(model, view);
 
-    public static void metoda()
-    {
-        System.out.println("Yupiiii!!!11!1");
-    }
-    
-    public static void dupaWolowa1()
-    {
-        System.out.println("asd");
+        view.setVisible(true);
     }
 }
 
